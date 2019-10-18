@@ -1,0 +1,72 @@
+/* This is for the HOME page styling  */
+/* Page Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1.8fr;
+  grid-template-rows: 0.4fr 2fr 0.6fr;
+  grid-template-areas: "Home logo" "Mobile-Nav Area-1" "nav nav";
+}
+
+.Home { grid-area: Home; 
+}
+
+.Mobile-Nav { grid-area: Mobile-Nav; 
+}
+
+.Area-1 { grid-area: Area-1;
+}
+
+.logo { grid-area: logo; 
+}
+
+.nav { grid-area: nav; 
+}
+
+/* Other- styles for home page  */
+body{
+  background-color:white;
+  background-image: url(bgimage.png);
+  background-size: contain;
+  background-blend-mode: darken;
+  background-position:240px 30px;
+  background-attachment: fixed;
+  color: white;
+}
+
+a {
+  color:white;
+  transition: 1s ease;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;;
+  font-size: 50px;
+  
+}
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;;
+  font-size: 3-px;
+}
+
+.area-1 span{
+  color: coral;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.nav {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  font-size:2rem;
+  margin-top:100px;
+}
+
+div.Area-1{
+  height: 300px;
+}
+
+div.logo{
+  margin-top:100px;
+}
