@@ -1,72 +1,108 @@
-/* This is for the HOME page styling  */
-/* Page Layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: 0.2fr 1.8fr;
-  grid-template-rows: 0.4fr 2fr 0.6fr;
-  grid-template-areas: "Home logo" "Mobile-Nav Area-1" "nav nav";
+/* HOME PAGE STYLING  */
+
+/* NAVIGATION STYLING  */
+nav.header {
+position: fixed;
+top: 0px;
+width: 100%;
+background-color: rgb(54, 54, 54);
+height: 35px;
+display: flex;
+align-items: center;
+}
+button{
+  display: none;
 }
 
-.Home { grid-area: Home; 
+nav.header a{
+text-decoration: none;
+color: white;
+font-size: 1.3rem;
+padding-right: 15px;
 }
 
-.Mobile-Nav { grid-area: Mobile-Nav; 
+nav.header a:hover{
+color:  rgb(5, 173, 252);
 }
 
-.Area-1 { grid-area: Area-1;
+/* HEADER STYLING  */
+
+body, html {
+height: 100%;
+margin: 0;
+height: 500px;
+display: flex;
+background-color: rgb(37, 37, 37);
+background-image: url(port.png);
+background-position: 280px 30px ;
 }
 
-.logo { grid-area: logo; 
+div.header{
+margin-top: 30px;
+height: 400px;
+display: flex;
+flex-direction: column;
+text-align: left;
 }
 
-.nav { grid-area: nav; 
+h1{
+margin-top: 30px;
+height: 400px;
+display: flex;
+margin-left: 50px;
+margin-top: 200px;
+font-size: 80px;
+flex-direction: column;
+font-family:'Luckiest Guy', cursive;
 }
 
-/* Other- styles for home page  */
+span{
+color: rgb(53, 53, 53);
+display: flex;
+font-size: 50px;
+color: rgb(54, 54, 54);
+}
+
+div.body{
+display: flex;
+flex-direction: row;
+}
+
+span.coma {
+color: green;
+}
+
+@media all and (max-width: 480px){
 body{
-  background-color:white;
-  background-image: url(bgimage.png);
-  background-size: contain;
-  background-blend-mode: darken;
-  background-position:240px 30px;
-  background-attachment: fixed;
-  color: white;
+color:white;
+background-image:none;
 }
 
-a {
-  color:white;
-  transition: 1s ease;
+
+nav.header a{
+display: flex;
+text-decoration: none;
+color: white;
+font-size: 1.3rem;
+padding-right: 15px;
 }
 
-h1 {
-  font-family: 'Open Sans Condensed', sans-serif;;
-  font-size: 50px;
+  /* ABOUT ME SECTION STYLING  */
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "nav nav nav nav" "content content photo photo" "content content photo photo" "content content photo photo" "content content photo photo";
+}
   
+.nav { 
+grid-area: nav; 
 }
-h2 {
-  font-family: 'Open Sans Condensed', sans-serif;;
-  font-size: 3-px;
-}
-
-.area-1 span{
-  color: coral;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  
+.content { 
+grid-area: content; 
 }
 
-div.nav {
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  font-size:2rem;
-  margin-top:100px;
-}
+.photo { grid-area: photo; }
 
-div.Area-1{
-  height: 300px;
-}
-
-div.logo{
-  margin-top:100px;
-}
