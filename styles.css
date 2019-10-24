@@ -2,7 +2,7 @@
 
 /* NAVIGATION STYLING  */
 nav.header {
-position: fixed;
+position: absolute;
 top: 0px;
 width: 100%;
 background-color: rgb(54, 54, 54);
@@ -17,8 +17,8 @@ button{
 nav.header a{
 text-decoration: none;
 color: white;
-font-size: 1.3rem;
 padding-right: 15px;
+font-family: 'Open Sans Condensed', sans-serif;;
 }
 
 nav.header a:hover{
@@ -30,11 +30,10 @@ color:  rgb(5, 173, 252);
 body, html {
 height: 100%;
 margin: 0;
-height: 500px;
 display: flex;
-background-color: rgb(37, 37, 37);
 background-image: url(port.png);
 background-position: 280px 30px ;
+font-family:'Open Sans Condensed', sans-serif;
 }
 
 div.header{
@@ -56,6 +55,10 @@ flex-direction: column;
 font-family:'Luckiest Guy', cursive;
 }
 
+h1:hover{
+
+}
+
 span{
 color: rgb(53, 53, 53);
 display: flex;
@@ -72,37 +75,65 @@ span.coma {
 color: green;
 }
 
-@media all and (max-width: 480px){
-body{
-color:white;
-background-image:none;
-}
-
-
 nav.header a{
 display: flex;
 text-decoration: none;
 color: white;
 font-size: 1.3rem;
-padding-right: 15px;
-}
+padding-right: 15px;}
 
-  /* ABOUT ME SECTION STYLING  */
+/* ABOUT ME STYLING  */
 
 .grid-container {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-grid-template-areas: "nav nav nav nav" "content content photo photo" "content content photo photo" "content content photo photo" "content content photo photo";
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-areas: "nav nav nav nav" "content content pic pic" "content content pic pic" "content content pic pic";
 }
-  
-.nav { 
-grid-area: nav; 
-}
-  
+
+.nav { grid-area: nav; }
+
 .content { 
-grid-area: content; 
+grid-area: content;
+margin-top: 35px; 
+margin-left: 50px;
+width: 40%;}
+
+.pic { 
+grid-area: pic;
+display: block;
+position: absolute;
+background-color:white;
+top: 80px;
+left: 800px;
+ }
+
+div.content {
+display: flex;
+flex-direction: column;
 }
 
-.photo { grid-area: photo; }
+h2.about{
+color:rgb(54, 54, 54);
+font-family:'Comfortaa', cursive;
+}
 
+img{
+  max-width: 300px;
+  height: auto;
+}
+
+img:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+body.different {
+background-image: none;
+background-color: white;
+}
+
+span.goal{
+  font-size:medium;
+  font-weight: 600; ;
+}
