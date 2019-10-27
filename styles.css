@@ -150,13 +150,10 @@ h2{
 h2:hover{
   color: rgb(5, 173, 252);
   transition: ease-in;
-  
 }
 
 
 div.Wholepage {
-margin-right: 10%;
-margin-left: 10%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -185,22 +182,56 @@ justify-content: center;
 .emailtext,
 .nametext{
   width: 230px;
-  line-height: 4;
-  margin-right: 20px;
+  margin-right: 90px;
   border-radius: 5px;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
-.message,
+label.message,
 .name,
 .email {
   font-size: 1.4rem;
 }
 
-
-.message-center{
+.message-centered {
   margin-top: 5%;
 }
 
 textarea{
   border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
+
+.emailtext,
+.nametext,
+textarea {
+border: rgb(206, 206, 206) 0.5px solid;
+}
+
+button.reach{
+  display: flex;
+  color: rgb(5, 173, 252);
+  border-radius: 5rem;
+  margin-left: 220px;
+  margin-bottom: 2rem;
+  border-width: 2px;
+  margin-top: 2rem;
+ background-color: transparent;
+ border: rgb(5, 173, 252) 1px solid;
+ color:rgb(5, 173, 252);
+ transition: ease-in;
+ font-size: 1.5rem;
+font-weight: 300;
+}
+
+button:hover{
+  background-color: rgb(5, 173, 252);
+  color: white;
+  cursor: pointer;
+  ;
+}
+
+
