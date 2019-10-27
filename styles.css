@@ -22,18 +22,18 @@ font-family: 'Open Sans Condensed', sans-serif;;
 }
 
 nav.header a:hover{
-color:  rgb(5, 173, 252);
+  color:  rgb(5, 173, 252);
 }
 
 /* HEADER STYLING  */
 
-body, html {
-height: 100%;
-margin: 0;
-display: flex;
-background-image: url(port.png);
-background-position: 280px 30px ;
-font-family:'Open Sans Condensed', sans-serif;
+body {
+  margin: 0;
+  background-image: url(port.png);
+  font-family:'Open Sans Condensed', sans-serif;
+  width: 100%;
+  font-size: 1rem;
+  background-position: 300px 30px;
 }
 
 div.header{
@@ -53,10 +53,6 @@ margin-top: 200px;
 font-size: 80px;
 flex-direction: column;
 font-family:'Luckiest Guy', cursive;
-}
-
-h1:hover{
-
 }
 
 span{
@@ -121,11 +117,13 @@ font-family:'Comfortaa', cursive;
 img{
   max-width: 300px;
   height: auto;
+  border-radius: 8%;
 }
 
 img:hover{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  filter: grayscale(100%);
 }
 
 body.different {
@@ -135,5 +133,74 @@ background-color: white;
 
 span.goal{
   font-size:medium;
-  font-weight: 600; ;
+  font-weight: 600; 
+}
+
+/* REACH OUT STYLING  */
+
+h2{
+  line-height: 1.5;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: blink;
+}
+
+h2:hover{
+  color: rgb(5, 173, 252);
+  transition: ease-in;
+  
+}
+
+
+div.Wholepage {
+margin-right: 10%;
+margin-left: 10%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.intro{
+  margin-top: 32px;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-email{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.namebox{
+  display: flex;
+  flex-direction: column;
+}
+
+.emailtext,
+.nametext{
+  width: 230px;
+  line-height: 4;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.message,
+.name,
+.email {
+  font-size: 1.4rem;
+}
+
+
+.message-center{
+  margin-top: 5%;
+}
+
+textarea{
+  border-radius: 5px;
 }
