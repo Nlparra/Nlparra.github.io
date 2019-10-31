@@ -56,10 +56,9 @@ font-family:'Luckiest Guy', cursive;
 }
 
 span{
-color: rgb(53, 53, 53);
 display: flex;
 font-size: 50px;
-color: rgb(54, 54, 54);
+color: rgb(54,54,54);
 }
 
 div.body{
@@ -67,9 +66,6 @@ display: flex;
 flex-direction: row;
 }
 
-span.coma {
-color: green;
-}
 
 nav.header a{
 display: flex;
@@ -118,6 +114,7 @@ img{
   max-width: 300px;
   height: auto;
   border-radius: 8%;
+
 }
 
 img:hover{
@@ -234,4 +231,77 @@ button:hover{
   ;
 }
 
+/* PORTFOLIO STYLING  */
 
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+  height: 400px;
+  background-image: url(bright-clear-close-up-401107.jpg);
+  background-size:cover;
+  filter: opacity(80%);
+};
+
+
+h1.hero{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+h1.works{
+  color: white;
+  font-size: 5rem;
+}
+
+p.intro-port{
+  margin-left: 13%;
+  color: white;
+}
+
+.whole-body{
+margin-left: 100px;
+margin-right: 100px;
+}
+
+div.portfolio{
+  height: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.home-pic{
+margin-top: 30px;
+margin-right: 30px;
+margin-bottom: 18px;
+}
+
+.port{
+margin-left: 50px;
+margin-right: 30px;
+width: 500px;
+}
+
+div.portfolio:hover{
+border: black 4px transparent;
+-webkit-box-shadow: 11px 11px 0px 0px rgba(0, 0, 0, 0.27);
+-moz-box-shadow:    11px 11px 0px 0px rgba(0, 0, 0, 0.27);
+box-shadow:         11px 11px 0px 0px rgba(0, 0, 0, 0.27);
+transform: scale(1.2) 2s;
+border: solid 2px rgb(211, 211, 211); 
+}
+
+img.home{
+  margin-top: 60px;
+  margin-right: 50px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 0px;
+  border: inset rgb(211, 211, 211) 2px;
+}
