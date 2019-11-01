@@ -5,7 +5,7 @@ nav.header {
 position: absolute;
 top: 0px;
 width: 100%;
-background-color: rgb(54, 54, 54);
+background-color: #2c2c34;
 height: 35px;
 display: flex;
 align-items: center;
@@ -16,13 +16,13 @@ button{
 
 nav.header a{
 text-decoration: none;
-color: white;
+color: #d8d8f6;
 padding-right: 15px;
 font-family: 'Open Sans Condensed', sans-serif;;
 }
 
 nav.header a:hover{
-  color:  rgb(5, 173, 252);
+  color:  #b18fcf;
 }
 
 /* HEADER STYLING  */
@@ -58,7 +58,7 @@ font-family:'Luckiest Guy', cursive;
 span{
 display: flex;
 font-size: 50px;
-color: rgb(54,54,54);
+color: #978897;
 }
 
 div.body{
@@ -70,7 +70,7 @@ flex-direction: row;
 nav.header a{
 display: flex;
 text-decoration: none;
-color: white;
+color: #d8d8f6;
 font-size: 1.3rem;
 padding-right: 15px;}
 
@@ -106,7 +106,7 @@ flex-direction: column;
 }
 
 h2.about{
-color:rgb(54, 54, 54);
+color:#2c2c34;
 font-family:'Comfortaa', cursive;
 }
 
@@ -145,7 +145,7 @@ h2{
 }
 
 h2:hover{
-  color: rgb(5, 173, 252);
+  color: #b18fcf;
   transition: ease-in;
 }
 
@@ -210,23 +210,23 @@ border: rgb(206, 206, 206) 0.5px solid;
 
 button.reach{
   display: flex;
-  color: rgb(5, 173, 252);
+  color: #2c2c34;
   border-radius: 5rem;
   margin-left: 220px;
   margin-bottom: 2rem;
   border-width: 2px;
   margin-top: 2rem;
  background-color: transparent;
- border: rgb(5, 173, 252) 1px solid;
- color:rgb(5, 173, 252);
+ border: #494850) 1px solid;
+ color:#2c2c34;
  transition: ease-in;
  font-size: 1.5rem;
 font-weight: 300;
 }
 
 button:hover{
-  background-color: rgb(5, 173, 252);
-  color: white;
+  background-color: #b18fcf;
+  color: #2c2c34;
   cursor: pointer;
   ;
 }
@@ -239,9 +239,9 @@ button:hover{
   flex-direction: column;
   margin-top: 35px;
   height: 400px;
-  background-image: url(bright-clear-close-up-401107.jpg);
+  background-image: url(computerhero.jpg);
   background-size:cover;
-  filter: opacity(80%);
+  background-position: bottom;
 };
 
 
@@ -253,13 +253,13 @@ h1.hero{
 }
 
 h1.works{
-  color: white;
+  color: #2c2c34;
   font-size: 5rem;
 }
 
 p.intro-port{
   margin-left: 13%;
-  color: white;
+  color: #2c2c34;
 }
 
 .whole-body{
@@ -294,7 +294,7 @@ border: black 4px transparent;
 -moz-box-shadow:    11px 11px 0px 0px rgba(0, 0, 0, 0.27);
 box-shadow:         11px 11px 0px 0px rgba(0, 0, 0, 0.27);
 transform: scale(1.2) 2s;
-border: solid 2px rgb(211, 211, 211); 
+border: solid 2px #d8d8f6; 
 }
 
 img.home{
@@ -303,5 +303,5 @@ img.home{
   max-width: 400px;
   height: auto;
   border-radius: 0px;
-  border: inset rgb(211, 211, 211) 2px;
+  border: inset #d8d8f6 2px;
 }
