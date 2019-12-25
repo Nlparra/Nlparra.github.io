@@ -136,6 +136,21 @@ p.aboutgoal{
     font-weight: 500px;
 }
  
+/* projects styling  */
+
+.projectsbody{
+    height: 100vh-40px;
+}
+
+.hero-image{
+    margin-bottom: 20px;
+}
+
+div.hero-text h1{
+    color: #999900;
+    font-size: 60px;
+}
+
 
 @media screen and (min-width:768px){
 /* navbar styling desktop  */
@@ -247,8 +262,71 @@ div.content{
 div.about-pic{
     width: 50%;
 }
+
 .aboutinformation{
     width: 50%;
     font-family: 'Assistant', sans-serif;
 }
+
+.hero-image {
+  background-image: url("computerhero.jpg");
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.project1{
+    width: 33%;
+    position: relative;
+    margin-left:50px ;
+    margin-bottom:20px ;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    widows: 100%;
+    height: auto;
+    transition: 5s ease;
+    backface-visibility: hidden;
+}
+
+div.project1-description{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+div.project1:hover .image {
+    opacity: 0.3;
+  }
+  
+div.project1:hover div.project1-description {
+    opacity: 1;
+  }
+  
+  div.description-within-project {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+
 }
