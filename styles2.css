@@ -151,6 +151,41 @@ div.hero-text h1{
     font-size: 60px;
 }
 
+/* skills styling  */
+ul.skills-list{
+    background-color: transparent;
+    list-style-type: none;
+    font-size: 2.5rem;
+    text-align: center;
+    text-align: center;
+    white-space: nowrap;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+    font-family: 'Calistoga', cursive;
+    position: fixed;
+}
+.skills-list{
+	animation:blinkingText 5s infinite;
+}
+@keyframes blinkingText{
+    0%{		color: rgb(105, 105, 105);	}
+    30%{    color: rgb(255, 0, 0)}
+	50%{	color: rgb(105, 105, 105);	}
+    70%{	color: rgb(35, 177, 0)	}
+    60%{	color: rgb(105, 105, 105)}
+	99%{	color: rgb(2, 183, 255);	}
+	100%{	color: rgb(105, 105, 105);	}
+}
+
+.skilllistbackground{
+    background-color: coral;
+}
+
+
+
+
+
 
 @media screen and (min-width:768px){
 /* navbar styling desktop  */
