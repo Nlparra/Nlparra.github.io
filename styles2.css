@@ -163,20 +163,23 @@ ul.skills-list{
     pointer-events: none;
     width: 100%;
     font-family: 'Calistoga', cursive;
+    position: fixed;
 }
 .skills-list{
-	animation:blinkingText 2s infinite;
+	animation:blinkingText 5s infinite;
 }
 @keyframes blinkingText{
-	0%{		color: red;	}
-	49%{	color: rgb(0, 212, 0);	}
-	50%{	color: gold	}
-	99%{	color:rgb(0, 183, 255);	}
-	100%{	color: #000;	}
+    0%{		color: rgb(105, 105, 105);	}
+    30%{    color: rgb(255, 0, 0)}
+	50%{	color: rgb(105, 105, 105);	}
+    70%{	color: rgb(35, 177, 0)	}
+    60%{	color: rgb(105, 105, 105)}
+	99%{	color: rgb(2, 183, 255);	}
+	100%{	color: rgb(105, 105, 105);	}
 }
 
 .skilllistbackground{
-    background-color: black;
+    background-color: coral;
 }
 
 
