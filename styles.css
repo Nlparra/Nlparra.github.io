@@ -1,0 +1,19 @@
+body{
+    background: white;     
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background: rgb(194, 194, 194);
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Chewy',;
+    color: white;
+}
+
+
