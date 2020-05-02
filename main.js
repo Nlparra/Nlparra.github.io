@@ -1,4 +1,11 @@
-navBar = () => {
-    document.getElementsByClassName("dropbtn").addEventListener("click", function(){
-    document.getElementsByClassName('dropdown-content').styles.display = "block"
-}
+function navBar() {
+    let a = document.querySelectorAll("Navbar__Items");
+    console.log(a)
+
+    if (a.style.display === "none") {
+      a.style.display = "block";
+    } else {
+      a.style.display = "none";
+    }
+  }
+
