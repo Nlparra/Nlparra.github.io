@@ -9,38 +9,45 @@ portfolio-container{
   flex-direction: column;
   align-items: center;
 }
-
-/* This is the code for navigation bar mobile */
-.main-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgb(255, 255, 255);
-  height: 40px;
-  width: 100%;
-  align-items: center;
-}
-
-ul{
+a {
+  color: black;
+  text-decoration: none;
   list-style: none;
-  padding-left: 10px;
 }
 
-a{
-  color:black;
-}
-
-a:hover{
+a:hover {
   color: pink;
 }
 
-.inner-nav{
+li {
+  list-style: none;
+}
+
+/* This is the code for navigation bar mobile */
+.main-nav{
+  background: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.inner-nav {
   display: none;
 }
 
-.fas.fa-bars {
-  font-size: 20px;
-} 
+.nav-links{
+  color: black;
+  display:block;
+}
+
+.nav-links:hover{
+  color: pink;
+}
+
+
+
+
+
  /* this is the styling for the landing side of the page  */
 .landing{
   background-image: url("./src/img/thinkingguy.jpg");
@@ -66,8 +73,8 @@ h1{
   padding-right: 10px;
   font-weight: 100;
   margin-bottom: 60px;
-  border-right: solid 3px rgba(0,255,0,.75);
-  white-space: nowrap;
+  /* border-right: solid 3px rgba(0,255,0,.75); */
+  white-space: wrap;
   overflow: hidden; 
 
 }
@@ -86,6 +93,17 @@ span{
   margin-bottom: 0px;
 }
 
+.fas.fa-angle-down {
+  color:pink;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1; 
+}
+@keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
 
 /* styling for the about me section  */
 
@@ -163,7 +181,7 @@ h1 {
 }
 
 @keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
+  from{border-right-color: rgba(54, 54, 54, 0.75);}
   to{border-right-color: transparent;}
 }
 
