@@ -185,5 +185,16 @@ h1 {
   to{border-right-color: transparent;}
 }
 
+.inner-nav {
+  display: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-links {
+  padding-right: 20px;
+}
+.fa.fa-bars {
+  display: none;
+}
 
 }
