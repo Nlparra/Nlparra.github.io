@@ -48,6 +48,8 @@ li {
 
 
 
+
+
  /* this is the styling for the landing side of the page  */
 .landing{
   background-image: url("./src/img/thinkingguy.jpg");
@@ -191,10 +193,12 @@ h1 {
   flex-direction: row;
 }
 .nav-links {
-  padding-right: 20px;
+  padding-right: 30px;
+  font-weight: 800;
 }
 .fa.fa-bars {
   display: none;
 }
+
 
 }
