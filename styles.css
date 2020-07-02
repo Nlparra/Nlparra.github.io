@@ -124,6 +124,8 @@ span{
   padding-bottom: 60px;
 }
 
+.projects,
+.skills,
 .contactme{
   display:flex;
   flex-direction: column;
