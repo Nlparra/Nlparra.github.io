@@ -1,223 +1,3 @@
-/* body{
-  font-family: 'Lato', sans-serif;
-  font-weight: 200;
-  min-height: 100vh;
-}
-
-portfolio-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-a {
-  color: black;
-  text-decoration: none;
-  list-style: none;
-}
-
-a:hover {
-  color: pink;
-}
-
-li {
-  list-style: none;
-} */
-
-/* This is the code for navigation bar mobile */
-/* .main-nav{
-  background: white;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-
-.inner-nav {
-  display: none;
-}
-
-.nav-links{
-  color: black;
-  display:block;
-}
-
-.nav-links:hover{
-  color: pink;
-}
-
- */
-
-
-
-
-
- /* this is the styling for the landing side of the page  */
-/* .landing{
-  background-image: url("./src/img/thinkingguy.jpg"); */
-  /* height: 75vh; */
-  /* width: 100%;
-  background-repeat: no-repeat;
-  background-size: auto 500px;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: black 2px solid;
-  align-items: center;
-  padding-top:230px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1{
-  font-family: 'Love Ya Like A Sister', cursive;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-weight: 100;
-  margin-bottom: 60px; */
-  /* border-right: solid 3px rgba(0,255,0,.75); */
-  /* white-space: wrap;
-  overflow: hidden; 
-
-} */
-/* 
-span{
-  color: #ffb8c6;
-}
-.little-arrow{
- text-align: center;
-}
-.little-arrow a{
-  font-size: 30px;
-}
-.little-arrow p {
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.fas.fa-angle-down {
-  color:pink;
-  animation: pulsate 1s ease-out;
-  animation-iteration-count: infinite;
-  opacity: 1; 
-}
-@keyframes pulsate {
-  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-  50% {opacity: 1.0;}
-  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-} */
-
-/* styling for the about me section  */
-
-/* .aboutme{
-  width: 100%;
-  /* padding-bottom: 60px; */
-/* } */
-
-/* .aboutme i {
-  padding-right: 10px; */
-/* } */
-
-/* styling for the contact section  */
-/* .contact{
-  width: 100%;
-  padding-bottom: 60px;
-}
-
-.projects,
-.skills,
-.contactme{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-
-  
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  height: 25px;
-  border-radius: 8px;
-  border: whitesmoke 2px solid;
-}
-
-textarea{
-  border-radius: 8px;
-  border: whitesmoke 2px solid;
-  outline: none;
-  resize: none;
-}
-form {
-  width: 90%;
-
-} */
-
-/* skills styling  */
-
-
-
-
-/* @media only screen and (min-width: 768px) {
-  form {
-    width: 50%;
-}
-h1{
-  border-right: solid 3px rgba(0,255,0,.75);
-  white-space: nowrap;
-  overflow: hidden; 
-
-}
- 
-h1 {
-  animation: 
-    animated-text 4s steps(29) 0.5s 1 normal both,
-    animated-cursor 600ms steps(29) infinite;
-    
-}
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 70%;}
-}
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(54, 54, 54, 0.75);}
-  to{border-right-color: transparent;}
-}
-
-.inner-nav {
-  display: none;
-  display: flex;
-  flex-direction: row;
-}
-.nav-links {
-  padding-right: 30px;
-  font-weight: 800;
-}
-.fa.fa-bars {
-  display: none;
-}
-
-
-}
-
-body {
-  letter-spacing: 0.2px;
-}
-
-.card {
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-} */
-
-
 :root {
   --bg: #0b0b0f;
   --text: #f5f5f5;
@@ -236,16 +16,11 @@ body {
   color: var(--text);
 }
 
-.hero {
-  min-height: 100vh;
-  padding: 4rem;
-}
-
-.hero-text h1 {
+/* .hero-text h1 {
   font-size: 50rem;
   font-weight: 800;
   line-height: 1.05;
-}
+} */
 
 .hero-title {
   font-size: clamp(4.5rem, 9vw, 8rem);
@@ -254,12 +29,11 @@ body {
   letter-spacing: -0.03em;
 }
 
-
-.hero-text p {
+/* .hero-text p {
   margin-top: 1.5rem;
   font-size: 1.1rem;
   color: var(--muted);
-}
+} */
 
 .dot {
   color: var(--accent);
@@ -270,17 +44,16 @@ body {
   height: 100%;
 }
 
-.hero-container {
+/* .hero-container {
   position: relative;
-}
+} */
 
-
-.symbol-layer {
+/* .symbol-layer {
   position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-}
+} */
 
 .symbol {
   position: absolute;
@@ -343,27 +116,6 @@ body {
   will-change: transform;
 }
 
-/* .symbol-top {
-  top: 8%;
-  right: 22%;
-  font-size: 9rem;
-  opacity: 0.4;
-}
-
-.symbol-mid {
-  top: 42%;
-  right: 12%;
-  font-size: 6rem;
-  opacity: 0.35;
-}
-
-.symbol-bottom {
-  bottom: 10%;
-  right: 30%;
-  font-size: 7.5rem;
-  opacity: 0.25;
-} */
-
 .symbol-top {
   animation-delay: 0s;
 }
@@ -391,7 +143,6 @@ body {
 /* ABOUT STYLING */
 .about-title {
   font-size: 4rem;
-  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -399,25 +150,11 @@ body {
 .sub-title {
   font-size: 4rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .pink{
   color: var(--accent)
-}
-
-/* SELECT WORK SECTION  */
-.work-item {
-  margin-bottom: 3rem;
-}
-
-.work-item h3 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.work-item p {
-  color: var(--muted);
 }
 
 /* PROCESS STEP  */
@@ -432,6 +169,36 @@ body {
   color: var(--accent);
   font-weight: 700;
 }
+
+.experience-item {
+  margin-top: 2rem;
+}
+
+.experience-role {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.experience-desc {
+  color: var(--muted);
+  max-width: 60ch;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+  color: rgba(245,245,245,0.9);
+}
+
+.experience-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
 
 /* CONTACT STYLING  */
 .contact-section {
@@ -548,7 +315,6 @@ body {
 
   .sub-title {
     font-size: 2.8rem;
-    line-height: 1.3;
   }
 
   .process-step span {
