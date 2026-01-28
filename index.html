@@ -1,130 +1,427 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name=”keywords” content=”south florida, florida, developer, broward, front end , front developer, full stack developer, designer, miami” />
+    <meta name="keywords" content="south florida, florida, developer, broward, front end, full stack developer, miami">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
-    <link
- 
-    
-    
     <script src="https://kit.fontawesome.com/d4919720ff.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap CDN  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <title>Nlparra.Dev</title>
+    <title>Nelson Parra | Software Engineer & Product Builder</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <div class="header-brand">NP</div>
 
-  <nav class="main-nav">
-    <a href="javascript:void(0);" class="nav-links" onclick="myNav()" >
-      <i class="fa fa-bars"></i>
-      <div class="inner-nav" id="responsive">
-         <a class="nav-links" href="#">Home</a>
-        <a class="nav-links"  href="#about">About</a>
-        <a class="nav-links"  href="#education">Education</a>
-        <a class="nav-links" href="#skills">Skills</a>
-        <a class="nav-links" href="#projects">Projects</a>
-        <a class="nav-links" href="#contact">Contact</a>
-  
-        </a>
-      </div>
-  </nav>
-  
-  <div class="portfolio-container">
-  <div class="landing">
-    <h1 class="typewriter"><span>Hi!</span> I'm <span>Nelson</span>. I Design and build <span>full stack web applications.</span></h1>
-    <div class="little-arrow">
-    <p>Get to know me!</p>
-    <a href="#about"><i class="fas fa-angle-down"></i></a>
-  </div>
-
- </div>
- <div id="about" class="aboutme">
-  <h2><span>About Me!</span></h2>
-  <p>Hey guys! welcome to my portfolio page , this is a very small part of but feel free to take a look around.This is still a work in progress. A little about me , I recently got into coding , went to a bootcamp to learn something new and came out of it with a passion! currently based out of south florida. Anyways feel free to reach out!</p>
-  <h3>Follow Me!</h3>
-  <ul>
-    <li><a href="https://github.com/Nlparra"><i class="fab fa-github"></i>GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/nlparradev"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-    <li><a href="https://twitter.com/Nels_Dev"><i class="fab fa-twitter"></i>Twitter</a></li>
-    <!-- <li><a href=""><i class="fab fa-instagram"></i>Instagram</a></li> -->
-  </ul>
-  <div id="education">
-  <h3>Education</h3>
-  <ul>
-  <li class="education-list">
-      <p><span>FreeCodeCamp</span>
-      | Responsive Web Design</p>
-    </li>
-    <li class="education-list">
-      <p><span>4Geeks Academy</span>
-      | Full Stack Web Developer</p>
-    </li>
-    <li class="education-list">
-      <p><span>Wyncode Code Academy</span> |
-      Front End Web Developer</p>
-    </li>
-    <li class="education-list">
-      <p><span>Florida Atlantic University</span> | BS in Biological Sciences</p>
+      <nav class="header-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    </li>
-  </ul>
- </div>
- <div id="contact" class="contact">
-  <div class="skills">
-    <h2 id="skills">Skills</h2>
-<p>HTML | JavaScript | Python | MySQL | React.js | Hooks | Flask | Bootstrap | CSS | GIT</p>
+  </header>
+
+  <!-- Mobile Toggle OUTSIDE header -->
+  <div class="mobile-toggle" id="mobileToggle">
+    <span></span>
+    <span></span>
   </div>
 
-  <div class="projects">
-    <h2 id="projects">Projects</h2>
-hello world
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 
 
-
-  <div id="contact" class="contact">
-<div class="contactme">
-  <h2>Contact Me!</h2>
-  <form
-    action="https://formspree.io/xdowgbll"
-    method="POST"
-  >
-  <label>
-    Your name:
-<input type="text" name="name" placeholder="please write your name" required>
-</label>
-  <label>
-      Your email:
-  <input type="text" name="_replyto" placeholder="please write your email" required>
-  </label>
-  <label>
-      Your message:
-  <textarea rows="8" placeholder="Remember, be nice :)" name="message"></textarea>
-  </label>
-    <button type="submit">Send</button>
-  </form>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#stack">Stack</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </div>
 
 
 
+  <!-- SOCIAL MEDIA LINKS -->
+  <div class="social-rail">
+    <a href="https://github.com/Nlparra" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/nelson-parra-15701a62" target="_blank">LinkedIn</a>
+    <a href="mailto:nlparra.dev@gmail.com">Email</a>
+  </div>
 
-</div>
+  <!-- FIXED BACKGROUND -->
+  <div class="bg-stage d-none d-lg-block">
+    <span class="symbol symbol-top">{ }</span>
+    <span class="symbol symbol-mid">&lt;/&gt;</span>
+    <span class="symbol symbol-bottom">-/</span>
+  </div>
+
+  <!-- SCROLLING CONTENT -->
+  <div class="content">
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="container min-vh-100 d-flex align-items-center">
+        <div class="row w-100">
+          <div class="col-lg-8">
+            <h1 class="hero-title fw-bold mb-3">
+              Hello<span class="dot">.</span><br>
+              I’m Nelson
+            </h1>
+
+           <p class="text-secondary fs-5">
+            I build fast, modern websites<br>
+            for small businesses and startups<br>
+            that need more leads, not just design
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section reveal" id="about">
+      <div class="container min-vh-100 d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="about-title sub-title mb-4">About<span class="dot">.</span></h2>
+
+        <p class="about-text">
+          I’m a developer based in <span class="pink">Miami</span> building clean, fast websites and apps for small
+          businesses and early-stage products.
+        </p>
+
+        <p class="about-text">
+          I care about performance, clarity, and building things that are actually useful — not just visually polished.
+        </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <section class="work-section reveal" id="work">
+    <div class="container min-vh-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-8">
+          <h2 class="section-labele about-title sub-title">Work & Projects<span class="dot">.</span></h2>
+
+          <p class="work-lead mb-5">
+            Real client work, real products, and rebuilt projects.
+          </p>
+
+          <div class="work-list">
+
+            <!-- CLIENT -->
+            <div class="work-row mb-4">
+              <div class="work-head">
+                <h3 class="pink">Nurturing Minds Counseling</h3>
+                <h5 class="work-type">Client</h5>
+              </div>
+              <p class="work-desc">
+                Full website rebuild from scratch due to an unmaintainable codebase,
+                broken uploads, and poor structure. Clean responsive rebuild with
+                modern layout and clear content flow.
+              </p>
+              <p class="work-meta">HTML · CSS · JavaScript · Bootstrap</p>
+              <a class="btn btn-outline-secondary" href="https://nurturingmindscounseling.com/" target="_blank">View site →</a>
+            </div>
+
+            <hr>
+
+            <!-- PRODUCT -->
+            <div class="work-row mb-4">
+              <div class="work-head">
+                <h3 class="pink">VHealthy</h3>
+                <h5 class="work-type">Product · Beta</h5>
+              </div>
+              <p class="work-desc">
+                Health and fitness app that tracks calories, workouts, and goals,
+                with AI-powered feedback based on user data. Currently in TestFlight beta.
+              </p>
+              <p class="work-meta">App · AI · Tracking</p>
+              <span class="work-status">TestFlight (Private Beta)</span>
+            </div>
+
+            <hr>
+            <!-- REBUILD -->
+            <div class="work-row">
+              <div class="work-head">
+                <h3 class="pink">WTFoodTruck</h3>
+                <h5 class="work-type">Rebuild</h5>
+              </div>
+              <p class="work-desc">
+                Rebuilt and modernized location-based platform for food truck discovery.
+                Refactored into a clean, structured, modern codebase.
+              </p>
+              <p class="work-meta">Location · Discovery · Platform</p>
+              <span class="work-status">Code Complete · Not Deployed</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section reveal" id="experience">
+    <div class="container min-vh-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-8">
+          <h2 class="section-label sub-title mb-4">Experience</h2>
+
+          <div class="experience-item">
+            <h3 class="pink">RGI Solutions</h3>
+            <p class="experience-role">Platform Developer II</p>
+            <p class="experience-path">
+              Junior Developer → Software Developer → Platform Developer II
+            </p>
+
+            <p class="experience-desc">
+              Working on production platforms and client systems, focused on rebuilding,
+              refactoring, and modernizing applications across multiple products.
+            </p>
+
+            <ul class="experience-list">
+              <li>Refactoring and full rebuilds of internal platforms and client websites</li>
+              <li>Migrating systems away from WordPress into cloud-based architecture using Azure Blob Storage</li>
+              <li>White-label development of an eCommerce platform for ordering and managing lead generation</li>
+              <li>Building and maintaining features for a production web application used by internal teams and clients</li>
+              <li>Developing conversion-focused landing pages for lead generation campaigns</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack-section reveal" id="stack">
+    <div class="container min-vh-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-8">
+          <h2 class="section-label about-title sub-title">Tech Stack<span class="dot">.</span></h2>
+
+          <p class="stack-lead mb-5">
+            Tools and technologies I use across client work, products, and platforms.
+          </p>
+
+          <div class="stack-groups">
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Frontend</h3>
+              <p class="stack-items">
+                HTML · CSS · JavaScript · React · React Native · Angular · Bootstrap
+              </p>
+            </div>
+            <hr>
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Backend</h3>
+              <p class="stack-items">
+                Node.js · Express · Python · PHP · REST APIs · SQL · Jinja2
+              </p>
+            </div>
+            <hr>
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Platforms</h3>
+              <p class="stack-items">
+                WordPress · Azure Blob Storage · Cloud Hosting
+              </p>
+            </div>
+            <hr>
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Infrastructure</h3>
+              <p class="stack-items">
+                Docker · OrbStack · Containerized Development
+              </p>
+            </div>
+            <hr>
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Product</h3>
+              <p class="stack-items">
+                TestFlight · Mobile App Deployment · AI Integration
+              </p>
+            </div>
+            <hr>
+
+            <div class="stack-group">
+              <h3 class="stack-title pink">Workflow</h3>
+              <p class="stack-items">
+                Git · Refactoring · System Rebuilds · Performance Optimization
+              </p>
+            </div>
+            <hr>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section reveal" id="process">
+    <div class="container min-vh-100 d-flex align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-8">
+          <h2 class="section-label about-title sub-title">Process<span class="dot">.</span></h2>
+
+          <p class="process-lead mb-5">
+            Simple, structured, and focused on shipping clean, working products.
+          </p>
+
+          <div class="process-list">
+
+            <div class="process-step">
+              <span class="process-num">01</span>
+              <div class="process-content">
+                <h3>Scope</h3>
+                <p>
+                  We define the goal, pages, features, and what success looks like.
+                  No guessing, no vague requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="process-num">02</span>
+              <div class="process-content">
+                <h3>Build</h3>
+                <p>
+                  Design and development with clean structure, performance,
+                  mobile-first layout, and clear user flow.
+                </p>
+              </div>
+            </div>
+
+            <div class="process-step">
+              <span class="process-num">03</span>
+              <div class="process-content">
+                <h3>Launch</h3>
+                <p>
+                  Final testing, cleanup, deployment, and handoff.
+                  Clean delivery, no chaos.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section reveal" id="contact">
+    <div class="container min-vh-100 d-flex align-items-center">
+      <div class="row">
+        <div class="col-lg-8">
+
+          <h2 class="section-label mb-4 sub-title">Contact</h2>
+
+        <p class="contact-text mb-5">
+            Have a project in mind? <span class="pink">Let’s build something clean, fast, and useful.</span>
+          </p>
+
+
+          <form
+            action="https://formspree.io/xdowgbll"
+            method="POST"
+            class="contact-form"
+          >
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="Your email"
+              required
+            >
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send message</button>
+
+          </form>
+
+          <div class="contact-alt mt-5">
+            <span>Or email me directly:</span>
+            <a href="mailto:nlparra.dev@gmail.com">nlparra.dev@gmail.com</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-text">
+        Nelson Parra · Software Engineer & Product Builder
+      </p>
+      <p class="footer-copy">
+        © <span id="year"></span>
+      </p>
+    </div>
+  </div>
+</footer>
+
   </div>
 
 <script src="main.js"></script>
-    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
 
