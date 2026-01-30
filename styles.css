@@ -449,6 +449,14 @@ body.menu-open {
   margin: 0;
 }
 
+.email-link{
+  color: white;
+}
+
+.email-link:hover{
+  color: var(--accent);
+}
+
 /* =========================================================
    SCROLL REVEAL
 ========================================================= */
