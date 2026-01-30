@@ -17,6 +17,7 @@ document.addEventListener('mousemove', function (e) {
 
 /* ================================
    SCROLL REVEAL (INTERSECTION OBSERVER)
+   Mobile-safe version
 ================================ */
 
 let reveals = document.querySelectorAll('.reveal')
@@ -27,15 +28,12 @@ let observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible')
         entry.target.classList.remove('is-hidden')
-      } else {
-        entry.target.classList.remove('is-visible')
-        entry.target.classList.add('is-hidden')
       }
     })
   },
   {
     root: null,
-    threshold: 0.6
+    threshold: 0.2
   }
 )
 
@@ -71,7 +69,7 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active")
   }
 
-  /* Scrollspy logic */
+  /* Scrollspy */
   let current = ""
 
   sections.forEach(function (section) {
@@ -95,21 +93,23 @@ window.addEventListener("scroll", function () {
 
 /* ================================
    DESKTOP NAV SMOOTH SCROLL
+   (header offset safe)
 ================================ */
 
 document.querySelectorAll('.header-nav a').forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault()
     let target = document.querySelector(link.getAttribute('href'))
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' })
-    }
+    if (!target) return
+
+    let y = target.getBoundingClientRect().top + window.scrollY - 90
+    window.scrollTo({ top: y, behavior: "smooth" })
   })
 })
 
 
 /* ================================
-   MOBILE MENU TOGGLE
+   MOBILE MENU TOGGLE + SCROLL FIX
 ================================ */
 
 let mobileToggle = document.getElementById("mobileToggle")
@@ -117,11 +117,14 @@ let mobileMenu = document.getElementById("mobileMenu")
 
 if (mobileToggle && mobileMenu) {
 
+  /* Open / Close mobile menu */
   mobileToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active")
     mobileToggle.classList.toggle("active")
+    document.body.style.overflow = mobileMenu.classList.contains("active") ? "hidden" : "auto"
   })
 
+  /* Mobile nav smooth scroll */
   document.querySelectorAll(".mobile-nav a").forEach(function (link) {
     link.addEventListener("click", function (e) {
       e.preventDefault()
@@ -129,13 +132,13 @@ if (mobileToggle && mobileMenu) {
 
       mobileMenu.classList.remove("active")
       mobileToggle.classList.remove("active")
+      document.body.style.overflow = "auto"
 
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" })
-      }
+      if (!target) return
+
+      let y = target.getBoundingClientRect().top + window.scrollY - 90
+      window.scrollTo({ top: y, behavior: "smooth" })
     })
   })
 
 }
-
-
