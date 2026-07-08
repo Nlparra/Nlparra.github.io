@@ -291,6 +291,25 @@ body.menu-open {
   color: var(--accent);
 }
 
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-section .container {
+  width: 100%;
+}
+
+.hero-title {
+  font-size: clamp(4.5rem, 9vw, 8rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
 /* =========================================================
    SECTIONS
 ========================================================= */
@@ -301,8 +320,9 @@ body.menu-open {
 .process-section,
 .experience-section,
 .contact-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  scroll-margin-top: 80px;
 }
 
 .about-text {
@@ -315,7 +335,7 @@ body.menu-open {
   font-size: 4rem;
   text-transform: uppercase;
   color: var(--muted);
-  line-height: 1.8;
+  line-height: 1.1;
 }
 
 .pink {

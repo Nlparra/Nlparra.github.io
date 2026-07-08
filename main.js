@@ -63,17 +63,19 @@ let sections = document.querySelectorAll("section[id]")
 window.addEventListener("scroll", function () {
 
   /* Sticky header */
-  if (window.scrollY > 80) {
-    header.classList.add("active")
-  } else {
-    header.classList.remove("active")
+  if (header) {
+    if (window.scrollY > 80) {
+      header.classList.add("active")
+    } else {
+      header.classList.remove("active")
+    }
   }
 
   /* Scrollspy */
   let current = ""
 
   sections.forEach(function (section) {
-    let sectionTop = section.offsetTop - 120
+    let sectionTop = section.offsetTop - 140
     let sectionHeight = section.offsetHeight
 
     if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
@@ -102,7 +104,7 @@ document.querySelectorAll('.header-nav a').forEach(function (link) {
     let target = document.querySelector(link.getAttribute('href'))
     if (!target) return
 
-    let y = target.getBoundingClientRect().top + window.scrollY - 90
+    let y = target.getBoundingClientRect().top + window.scrollY - 85
     window.scrollTo({ top: y, behavior: "smooth" })
   })
 })
@@ -121,7 +123,12 @@ if (mobileToggle && mobileMenu) {
   mobileToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("active")
     mobileToggle.classList.toggle("active")
-    document.body.style.overflow = mobileMenu.classList.contains("active") ? "hidden" : "auto"
+
+    if (mobileMenu.classList.contains("active")) {
+      document.body.classList.add("menu-open")
+    } else {
+      document.body.classList.remove("menu-open")
+    }
   })
 
   /* Mobile nav smooth scroll */
@@ -132,11 +139,11 @@ if (mobileToggle && mobileMenu) {
 
       mobileMenu.classList.remove("active")
       mobileToggle.classList.remove("active")
-      document.body.style.overflow = "auto"
+      document.body.classList.remove("menu-open")
 
       if (!target) return
 
-      let y = target.getBoundingClientRect().top + window.scrollY - 90
+      let y = target.getBoundingClientRect().top + window.scrollY - 85
       window.scrollTo({ top: y, behavior: "smooth" })
     })
   })
